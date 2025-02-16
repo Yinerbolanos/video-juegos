@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>V I D E O J U E G O S</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <style>
+            .navbar {
+                position: absolute;
+                width: 100%;
+                background-color: rgba(255, 255, 255, 0.4);
+
+            }
+            .navbar-brand, .nav-link, .dropdown-toggle {
+                color: black;
+               
+               
+                
+            }
+            .nav-link:hover {
+                text-decoration: underline;
+                font-weight: bold   ;
+            }
+
+            .imagenP {
+                width: 100%;
+                height: 100vh; 
+                background-size: cover;
+                background-position: center;
+                display: inline-block;
+            }
+
+            .portada1 {
+                background-image: url('https://i.imgur.com/h5UTWvN.png');
+                
+            }
+
+
+            .infointro {
+                position: absolute;
+                top: 50%;
+                left: 70%;
+                transform: translate(-50%, -50%);
+                color: white;
+                text-align: justify;
+                font-size: 1.1rem;
+                text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+                border: none;
+                padding: 15px;
+                text-decoration: none; /* Remueve el subrayado */
+                border-radius: 5px;
+                width: 40%;
+            }
+            
+            .textointro {
+                position: absolute;
+                top: 50%;
+                left: 25%;
+                transform: translate(-50%, -50%);
+                color: white;
+                font-size: 3rem;
+                text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+                border: none;
+                padding: 10px 20px;
+                text-decoration: none;
+                border-radius: 5px;
+            }
+
+            .navbar-center {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                font-size: 1.5rem;
+            }
+            .video-container {
+                position: relative;
+                padding-bottom: 56.25%;
+                height: 0;
+                overflow: hidden;
+            }
+
+            .video-container iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+            .barra-sup {
+                background-color: black;
+                color: white;
+                text-align: center;
+                padding: 5px 0;
+                font-size: 0.7rem;
+            }
+            .dropdown-item:active {
+                background-color: transparent;
+                color: inherit;
+            }
+
+        
+        </style>
+    </head>
+    <body>
+        
+        <!-- Barra negra superior -->
+        <div class="barra-sup">
+           ---| V I D E O J U E G O S |---
+        </div>
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <div class="d-flex justify-content-between w-100">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="file:///C:/Users/Mora/Documents/Paginaweb1/generos.html">GENEROS POPULARES</a>
+                    </li>
+                </ul>
+                
+                <!-- Botón central de "VIDEOJUEGOS" -->
+                <a class="navbar-brand navbar-center" href="file:///C:/Users/Mora/Documents/Paginaweb1/index.html"><strong>V I D E O J U E G O S</strong></a>
+        
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="file:///C:/Users/Mora/Documents/Paginaweb1/historia.html">HISTORIA</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+              
+        <!-- Botones portada -->        
+        <div class="container-fluid">
+            <div class="row no-gutters">
+                <div class="col-6 imagenP portada1">
+                    <a class="textointro">I N T R O D U C C I O N</a>
+                </div>
+
+                <div class="col-6">
+                    <a class="infointro" >Los videojuegos han pasado de ser simples experimentos tecnológicos a convertirse en una de las formas de entretenimiento más populares del mundo. Con una enorme variedad de géneros y plataformas, los videojuegos no solo ofrecen diversión, sino que también han impactado la cultura, la educación y las comunidades globales. Hoy, son una industria multimillonaria que sigue innovando con avances como la realidad virtual y la inteligencia artificial, ofreciendo nuevas experiencias a los jugadores.</a>
+                </div>
+
+            </div>
+        </div>
+        
+        <!-- Video portada -->    
+        <div class="row g-3 mt-2 mx-2">
+            <div class="col-md-4">
+                <div class="video-container">
+                    <iframe width="100%" height="auto" 
+                        src="https://www.youtube.com/embed/Rla3FUlxJdE?autoplay=1&controls=0&modestbranding=1&rel=0&fs=0&iv_load_policy=3&mute=1&"    
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="video-container">
+                    <iframe width="100%" height="auto" 
+                        src="https://www.youtube.com/embed/hvoD7ehZPcM?autoplay=1&controls=0&modestbranding=1&rel=0&fs=0&iv_load_policy=3&mute=1&start=14"    
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="video-container">
+                    <iframe width="100%" height="auto" 
+                        src="https://www.youtube.com/embed/AN3jEjjcZ-k?autoplay=1&controls=0&modestbranding=1&rel=0&fs=0&iv_load_policy=3&mute=1&start=4"    
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>   
+
+    
+        
+        <!-- Footer -->      
+        <footer class="bg-dark text-white py-4 mt-5" style="background-color: #000000;">
+            <div class="row">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5 class="fw-bold">Contacto</h5>
+                    <p class="mb-1">Email: <a href="mailto:contacto@videojuegos.com" class="text-white text-decoration-none">contacto@videojuegos.com</a></p>
+                    <p>Teléfono: +123 456 7890</p>
+                </div>
+        
+                <div class="col-md-4 text-center mb-3 mb-md-0">
+                    <h5 class="fw-bold">Síguenos</h5>
+                    <div>
+                        <a href="https://www.facebook.com/Videojuegos" class="text-white me-3" aria-label="Facebook"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="https://twitter.com/Videojuegos" class="text-white me-3" aria-label="Twitter"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="https://www.instagram.com/playstation/" class="text-white me-3" aria-label="Instagram"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="https://www.youtube.com/Videojuegos" class="text-white" aria-label="YouTube"><i class="fab fa-youtube fa-lg"></i></a>
+                    </div>
+                </div>
+        
+                <div class="col-md-4 text-end">
+                    <h5 class="fw-bold">Sobre Nosotros</h5>
+                    <p class="mb-0">Somos una comunidad apasionada por los videojuegos, ofreciendo contenido, reseñas y noticias sobre lo último en la industria del gaming.</p>
+                </div>
+            </div>
+            <div class="text-center py-3 border-top mt-4">
+                <small>&copy; 2024 <strong>V I D E O J U E G O S</strong></small>
+            </div>
+        </footer>
+        
+      
+    </body>
+</html>
