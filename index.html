@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>V I D E O J U E G O S</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <style>
+
+            @keyframes scaleUp {
+                0% {
+                    transform: scale(0.5);
+                    opacity: 0;
+                }
+                100% {
+                    transform: scale(1); 
+                    opacity: 1;
+                }
+            }
+            html, body {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                overflow-x: hidden;
+            }
+
+            .navbar {
+                position: absolute;
+                width: 100%;
+                background-color: rgba(255, 255, 255, 0.4);
+
+            }
+            .navbar-brand, .nav-link, .dropdown-toggle {
+                color: black;         
+            }
+            .nav-link:hover {
+                text-decoration: underline;
+                font-weight: bold   ;
+            }
+
+            .imagenP {
+                width: 100%;
+                height: 100vh; 
+                background-size: cover;
+                background-position: center;
+                
+            }
+            .portada1 {
+                background-image: url('https://i.imgur.com/h5UTWvN.png');         
+            }
+
+            .infointro {
+                position: absolute;
+                top: 50%;
+                left: 70%;
+                transform: translate(-50%, -50%);
+                color: white;
+                text-align: justify;
+                font-size: 1.1rem;
+                text-shadow: 12px 2px 10px rgb(0, 0, 0);
+                border: none;
+                padding: 15px;
+                text-decoration: none; 
+                border-radius: 5px;
+                width: 40%;
+
+                animation: scaleUp 1s ease-out;
+            }
+            
+            .textointro {
+                position: absolute;
+                top: 50%;
+                left: 25%;
+                transform: translate(-50%, -50%);
+                color: white;
+                font-size: 3rem;
+                text-shadow: 12px 2px 15px rgb(0, 0, 0);
+                border: none;
+                padding: 10px 20px;
+                text-decoration: none;
+                border-radius: 5px;
+                animation: scaleUp 1s ease-out;
+            }
+
+            .navbar-center {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                font-size: 1.5rem;
+            }
+            .video-container {
+                position: relative;
+                padding-bottom: 56.25%;
+                height: 0;
+                overflow: hidden;
+            }
+
+            .video-container iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+            .barra-sup {
+                background-color: black;
+                color: white;
+                text-align: center;
+                padding: 5px 0;
+                font-size: 0.7rem;
+            }
+
+            .contenedorcarrusel{
+                width: 100%; 
+                margin: 35px auto;
+            }
+            .carousel-inner img {
+                height: 400px; 
+                object-fit: cover;
+            }
+
+            .titulos{
+                background-color: black;
+                color: white;
+                padding: 10px 40px;
+                font-weight: bold;
+                font-size: 3rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                width: fit-content; 
+                margin: 0 auto;
+                margin-top: 195px;
+            }
+
+        </style>
+    </head>
+    <body>
+        
+        <!-- Barra negra superior -->
+        <div class="barra-sup">
+           ---| V I D E O J U E G O S |---
+        </div>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <div class="d-flex justify-content-between w-100">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                          <a class="nav-link" href="generos.html">GENEROS</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="historia.html">HISTORIA</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="usuarios.html">USUARIOS</a>
+                      </li>
+                  </ul>
+                  
+                  <!-- Botón central de "VIDEOJUEGOS" -->
+                  <a class="navbar-brand navbar-center" href="index.html"><strong>V I D E O J U E G O S</strong></a>
+          
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            . . .
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#noticias">Noticias</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#videos">Videos</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#footer">Footer</a></li>
+                          </ul>
+                        </li>
+                  </ul>
+              </div>
+        </nav>
+              
+        <!-- Botones portada -->        
+        <div class="container-fluid">
+            <div class="row no-gutters">
+                <div class="col-6 imagenP portada1">
+                    <a class="textointro">I N T R O D U C C I O N</a>
+                </div>
+
+                <div class="col-6">
+                    <a class="infointro" >Los videojuegos han pasado de ser simples experimentos tecnológicos a convertirse en una de las formas de entretenimiento más populares del mundo. Con una enorme variedad de géneros y plataformas, los videojuegos no solo ofrecen diversión, sino que también han impactado la cultura, la educación y las comunidades globales. Hoy, son una industria multimillonaria que sigue innovando con avances como la realidad virtual y la inteligencia artificial, ofreciendo nuevas experiencias a los jugadores.</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container-fluid" id="noticias">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="contenedorcarrusel">
+                        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="https://media-rockstargames-com.akamaized.net/mfe6/prod/__common/img/71d4d17edcd49703a5ea446cc0e588e6.jpg" class="d-block w-100" alt="50%">
+                                    <div class="carousel-caption d-none d-md-block">
+                                    <h5>¡GTA 6 ya tiene fecha!</h5>
+                                    <p>Rockstar Games ha confirmado el lanzamiento de Grand Theft Auto VI para otoño de 2025.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://i.imgur.com/Gz5tOGj.jpeg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                <h5>¡Riot Games da marcha atrás!</h5>
+                                <p>Riot Games ha escuchado a la comunidad y ha decidido revertir los cambios más polémicos en League of Legends.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://cdn2.unrealengine.com/fortnite-na-central-server-region-3-1920x1080-8e53d35d7d26.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                <h5>¡Nuevas armas y objetos llegan a Fortnite!</h5>
+                                <p>La Temporada 2 del Capítulo 6 trae un arsenal renovado con armas y herramientas que cambiarán la jugabilidad.</p>
+                            </div>
+                            </div>
+                            </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="titulos">N O T I C I A S</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        
+        <!-- Video portada -->    
+        <div class="row g-3 mt-2 mx-2" id="videos">
+            <div class="col-md-4">
+                <div class="video-container">
+                    <iframe width="100%" height="auto" 
+                        src="https://www.youtube.com/embed/Rla3FUlxJdE?autoplay=1&controls=0&modestbranding=1&rel=0&fs=0&iv_load_policy=3&mute=1&"    
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="video-container">
+                    <iframe width="100%" height="auto" 
+                        src="https://www.youtube.com/embed/hvoD7ehZPcM?autoplay=1&controls=0&modestbranding=1&rel=0&fs=0&iv_load_policy=3&mute=1&start=14"    
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="video-container">
+                    <iframe width="100%" height="auto" 
+                        src="https://www.youtube.com/embed/AN3jEjjcZ-k?autoplay=1&controls=0&modestbranding=1&rel=0&fs=0&iv_load_policy=3&mute=1&start=4"    
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>   
+
+    
+        
+        <!-- Footer -->      
+        <footer class="bg-dark text-white py-4 mt-5" style="background-color: #000000;" id="footer">
+            <div class="row">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5 class="fw-bold">Contacto</h5>
+                    <p class="mb-1">Email: <a href="mailto:contacto@videojuegos.com" class="text-white text-decoration-none">contacto@videojuegos.com</a></p>
+                    <p>Teléfono: +123 456 7890</p>
+                </div>
+        
+                <div class="col-md-4 text-center mb-3 mb-md-0">
+                    <h5 class="fw-bold">Síguenos</h5>
+                    <div>
+                        <a href="https://www.facebook.com/Videojuegos" class="text-white me-3" aria-label="Facebook"><i class="fab fa-facebook-f fa-lg"></i></a>
+                        <a href="https://twitter.com/Videojuegos" class="text-white me-3" aria-label="Twitter"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="https://www.instagram.com/playstation/" class="text-white me-3" aria-label="Instagram"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="https://www.youtube.com/Videojuegos" class="text-white" aria-label="YouTube"><i class="fab fa-youtube fa-lg"></i></a>
+                    </div>
+                </div>
+        
+                <div class="col-md-4 text-end">
+                    <h5 class="fw-bold">Sobre Nosotros</h5>
+                    <p class="mb-0">Somos una comunidad apasionada por los videojuegos, ofreciendo contenido, reseñas y noticias sobre lo último en la industria del gaming.</p>
+                </div>
+            </div>
+            <div class="text-center py-3 border-top mt-4">
+                <small>&copy; 2024 <strong>V I D E O J U E G O S</strong></small>
+            </div>
+        </footer>
+      
+        
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
